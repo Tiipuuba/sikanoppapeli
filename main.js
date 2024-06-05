@@ -6,9 +6,9 @@ function saveSettings() {
         var players = 2
     }
 
-    pointamount = document.getElementById('points').value
+    var pointamount = document.getElementById('points').value
     if (pointamount === "") {
-        pointamount = 100
+        var pointamount = 100
     } else if (isNaN(parseInt(pointamount)) || parseInt(pointamount) < 1) {
         const faulty = document.getElementById("faulty")
         faulty.innerHTML = "Anna positiivinen luku numeroina"
@@ -17,9 +17,9 @@ function saveSettings() {
     }
 
     if (document.getElementById('d1').checked) {
-        dices = 1
+        var dices = 1
     } else {
-        dices = 2
+        var dices = 2
     }
 
     localStorage.setItem("players", players);
@@ -33,7 +33,7 @@ function saveSettings() {
     location.href = 'peli.html';
 }
 
-function pelinAloitus() {
+function initializeGame() {
     const players = localStorage.getItem("players")
     const pointamount = localStorage.getItem("pointamount")
     const dices = localStorage.getItem("dices")
