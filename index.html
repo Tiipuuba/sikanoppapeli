@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikanoppapeli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><a href="index.html">Sikanoppapeli</a></header>
+    <main>
+        <div class="content">
+            <section id="left">
+                <h3>Valitse asetukset</h3>
+                <div class="playeramount">
+                    <label for="players">Valitse pelaaja määrä</label>
+                    <input type="radio" id="p1" name="p" value="1" checked>
+                    <label for="1">1.</label>
+                    <input type="radio" id="p2" name="p" value="2">
+                    <label for="2">2.</label>
+                </div>
+                <div class="pointamount" id="pointamount">
+                    <label for="points">Valitse pistemäärä</label>
+                    <input type="text" id="points" name="points" placeholder="100">
+                    <p id="faulty"></p>
+                </div>
+                <div class="diceamount">
+                    <label for="dices">Valitse noppien määrä</label>
+                    <input type="radio" id="d1" name="n" value="1" checked>
+                    <label for="1">1.</label>
+                    <input type="radio" id="d2" name="n" value="2">
+                    <label for="2">2.</label>
+                </div>
+                <button id="start" onclick="saveSettings()">Aloita peli</button>
+            </section>
+            <section id="right">
+                <h3>Säännöt:</h3>
+                <p>Sikanoppapelissä yritetään päästä tavoite pistemäärään asti.</p>
+                <p>esimerkiksi 100 pistettä.</p>
+                <br>
+                <p>Noppaa saa heittää niin monta kertaa kuin haluaa.</p>
+                <p>Jokainen heitto lisätään pisteisiin ja pelaaja voi lopettaa vuoron minkä tahansa heiton jälkeen.</p>
+                <p>Pelaajan heittäessä ykkösen, menettää hän vuorollaan voittamansa pisteet ja vuoro vaihtuu.</p>
+                <br>
+                <p>Kahdella nopalla pelatessa sääntöt muuttuvat hieman.</p>
+                <p>  -Tuplat heittäessä heitetty pistemäärä tuplataan</p>
+                <p>  -Kahdella ykkösellä pelaaja saa 25 pistettä</p>
+                <p>  -Vain toisessa nopassa ykkönen tarkoittaa vuoron menetystä samoin kolme peräkkäistä tuplaa</p>
+            </section>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

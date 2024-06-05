@@ -1,0 +1,72 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: block;
+    background-color: blanchedalmond;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: underline;
+    border: 3px solid;
+    border-radius: 3px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#left {
+    padding: 40px;
+    line-height: 2;
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 50%;
+    border: 3px solid ;
+    border-radius: 3px;
+}
+
+#right {
+    padding: 25px;
+    background-color: rgb(240, 235, 229);
+    height: 100vh;
+    width: 150%;
+    border: 3px solid;
+    border-radius: 3px;
+}
+
+#start {
+    background-color: white;
+}
+
+#dices {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+#wincondition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#wincon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+}
+
+#buttons {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
